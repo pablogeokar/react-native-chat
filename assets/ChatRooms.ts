@@ -43,6 +43,7 @@ export default [
       content: "Why did you reject our offer?",
       createdAt: "2020-10-02T15:40:00.000Z",
     },
+    newMessages: 8,
   },
   {
     id: "3",
@@ -131,6 +132,7 @@ export default [
       content: "Who sus?",
       createdAt: "2020-10-02T15:40:00.000Z",
     },
+    newMessages: 9,
   },
   {
     id: "7",
@@ -178,6 +180,28 @@ export default [
   },
   {
     id: "9",
+    users: [
+      {
+        id: "u1",
+        name: "Vadim",
+        imageUri:
+          "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg",
+      },
+      {
+        id: "u10",
+        name: "Angelina Jolie",
+        imageUri:
+          "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg",
+      },
+    ],
+    lastMessage: {
+      id: "m9",
+      content: "Meet me at the same place",
+      createdAt: "2020-09-25T15:40:00.000Z",
+    },
+  },
+  {
+    id: "10",
     users: [
       {
         id: "u1",
