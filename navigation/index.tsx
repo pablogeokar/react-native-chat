@@ -25,7 +25,7 @@ export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeNa
   return (
     <NavigationContainer
       linking={LinkingConfiguration}
-    //theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}
+    theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}
     >
       <RootNavigator />
     </NavigationContainer>
@@ -41,7 +41,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 function RootNavigator() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      {/*<Stack.Screen name="Root" component={BottomTabNavigator} />*/}
+      <Stack.Screen name="Root" component={BottomTabNavigator} />
       <Stack.Screen name="ChatRoom" component={ChatRoomScreen} options={{ headerShown: true }} />
       <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: true }} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
